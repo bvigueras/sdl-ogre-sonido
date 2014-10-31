@@ -15,8 +15,7 @@ Dependencies
   * Ogre3d 1.8
   * OIS
 
-Dependencies installation on Debian based system:
--------------------------------------------------
+### Dependencies installation on Debian based system: ###
 
 1. SDL:
 
