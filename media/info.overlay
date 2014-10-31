@@ -1,0 +1,62 @@
+template element TextArea(MyTemplates/Text)
+{
+    font_name Blue
+		metrics_mode pixels
+		char_height 15
+		colour 1.0 1.0 1.0    
+}
+
+template element TextArea(MyTemplates/SmallText)
+{
+    font_name Blue
+		metrics_mode pixels
+		char_height 12
+		colour 1.0 1.0 1.0    
+}
+
+Info
+{
+    zorder 500
+
+    container Panel(panelInfo) 
+    {
+ 	metrics_mode pixels
+        left 10
+        top -90
+        width 206
+        height 80
+        vert_align bottom
+        material panelInfoM
+
+		    element TextArea(fpsInfo) : MyTemplates/Text 
+		    {
+				  top 32
+				  left 150	 
+		    }
+
+		    element TextArea(shadowInfo) : MyTemplates/SmallText
+		    {
+				  top 48
+				  left 68	 
+		    }
+
+		    element TextArea(materialInfo) : MyTemplates/SmallText 
+		    {
+				  top 62
+				  left 68	 
+		    }
+
+	  }
+	  
+    container Panel(logoUCLM) 
+    {
+ 		    metrics_mode pixels
+        left -180
+        top 0
+        width 150
+        height 120
+        vert_align top
+        horz_align right
+        material matUCLM
+	  }	  
+}

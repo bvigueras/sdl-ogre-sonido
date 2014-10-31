@@ -1,0 +1,6 @@
+Ejemplo sencillo de manejo de sonido
+------------------------------------
+
+* El track principal se reproducirá desde el principio.
+
+Al pulsar las teclas '1' ó '2' se reproducirá un efecto de sonido.
