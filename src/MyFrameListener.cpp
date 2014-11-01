@@ -59,6 +59,10 @@ bool MyFrameListener::frameStarted(const Ogre::FrameEvent& evt) {
   if(_keyboard->isKeyDown(OIS::KC_DOWN))  vt+=Ogre::Vector3(0,0,1);
   if(_keyboard->isKeyDown(OIS::KC_LEFT))  vt+=Ogre::Vector3(-1,0,0);
   if(_keyboard->isKeyDown(OIS::KC_RIGHT)) vt+=Ogre::Vector3(1,0,0);
+  if(_keyboard->isKeyDown(OIS::KC_W))   vt+=Ogre::Vector3(0,0,-1);
+  if(_keyboard->isKeyDown(OIS::KC_S))   vt+=Ogre::Vector3(0,0,1);
+  if(_keyboard->isKeyDown(OIS::KC_A))   vt+=Ogre::Vector3(-1,0,0);
+  if(_keyboard->isKeyDown(OIS::KC_D))   vt+=Ogre::Vector3(1,0,0);
 
   if(_keyboard->isKeyDown(OIS::KC_1)) {
     _sceneManager->setShadowTechnique(Ogre::SHADOWTYPE_TEXTURE_MODULATIVE);
