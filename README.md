@@ -17,6 +17,9 @@ Dependencies
 
 ### Dependencies installation on Debian based system: ###
 
+0. Basic tools:
+        $ sudo apt-get install build-essential
+
 1. SDL:
 
          $ sudo apt-get update
@@ -26,8 +29,8 @@ Dependencies
 
 2. Ogre3d 1.8:
 
-         $ sudo apt-get libogre-1.8-dev
+         $ sudo apt-get libogre-1.8.0 libogre-1.8-dev ogre-1.8-doc ogre-1.8-tools 
 
 3. OIS:
 
-         $ sudo apt-get install libois-dev
+         $ sudo apt-get install libois-1.3.0 libois-dev
