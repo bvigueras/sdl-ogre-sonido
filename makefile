@@ -15,7 +15,7 @@ CXXFLAGS := -I $(DIRHEA) -Wall `pkg-config --cflags OGRE`
 
 # Flags del linker ---------------------------------------------------
 LDFLAGS := `pkg-config --libs OGRE`
-LDLIBS := -lGL -lOgreMain -lOIS -lstdc++ -lSDL -lSDL_mixer
+LDLIBS := -lGL -lOgreMain -lOIS -lstdc++ -lSDL -lSDL_mixer -lboost_system
 
 # Modo de compilación (-mode=release -mode=debug) --------------------
 ifeq ($(mode), release) 
@@ -44,7 +44,7 @@ dirs:
 
 # Enlazado -----------------------------------------------------------
 $(EXEC): $(OBJS)
-	$(CXX) $(LDFLAGS) -o $@ $^ $(LDLIBS) -lboost_system
+	$(CXX) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
 # Compilación --------------------------------------------------------
 $(DIROBJ)%.o: $(DIRSRC)%.cpp
