@@ -100,7 +100,8 @@ bool MyFrameListener::frameStarted(const Ogre::FrameEvent& evt) {
   }
 
 
-  if(_keyboard->isKeyDown(OIS::KC_R)) r+=180;
+  if(_keyboard->isKeyDown(OIS::KC_E)) r+=180;
+  if(_keyboard->isKeyDown(OIS::KC_Q)) r-=180;
   _node->yaw(Ogre::Degree(r * deltaT));
   
   _mouse->capture();
