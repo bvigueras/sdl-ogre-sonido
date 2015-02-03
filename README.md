@@ -21,12 +21,10 @@ This code is part of the book "Curso de Experto en Desarrollo de Videojuegos" by
 ### Dependencies installation on Debian based system:
 
 1. Basic tools:
-
 ```sh
 $ sudo apt-get install build-essential
 ```
 2. SDL:
-
 ```sh
  $ sudo apt-get update
  $ sudo apt-get install libsdl1.2-dev
@@ -34,12 +32,10 @@ $ sudo apt-get install build-essential
  $ sudo apt-get install install libsdl-sound1.2-dev libsdl-mixer1.2-dev
 ```
 3. Ogre3d 1.8:
-
 ```sh
 $ sudo apt-get libogre-1.8.0 libogre-1.8-dev ogre-1.8-doc ogre-1.8-tools
 ```
 4. OIS:
-
 ```sh
 $ sudo apt-get install libois-1.3.0 libois-dev
 ```
