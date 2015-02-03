@@ -48,9 +48,9 @@ Info
 
 	  }
 	  
-    container Panel(logoUCLM) 
+    container Panel(logoUCLM)
     {
- 		    metrics_mode pixels
+ 		metrics_mode pixels
         left -180
         top 0
         width 150
@@ -58,5 +58,17 @@ Info
         vert_align top
         horz_align right
         material matUCLM
-	  }	  
+	  }
+
+	container Panel(panelControl)
+    {
+ 		metrics_mode pixels
+        left -160
+        top -160
+        width 150
+        height 150
+        vert_align bottom
+        horz_align right
+        material matControl
+	  }
 }
